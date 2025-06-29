@@ -5,8 +5,7 @@ description: Draft a high‑level implementation/refactor plan – first derive 
 
 CRITICAL RULES: Dont plan or code anything!!
 
-NEVER RUN -o "codefetch/context.md"
-!`npx -y codefetch -o "context.md"`
+!`npx -y codefetch@latest -o "context.md"`
 
 5. Call Gemini CLI (allowed tool) with the prepared context:
 

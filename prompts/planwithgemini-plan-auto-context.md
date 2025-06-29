@@ -20,8 +20,7 @@ The list below contains every tracked or untracked source file except those igno
 3. Explain your selection briefly: (one short paragraph).  
 4. Run Codefetch with your chosen flags.
 
-NEVER RUN -o "codefetch/context.md"
-!`npx -y codefetch <your-flags-here> -o "context.md"`
+!`npx -y codefetch@latest <your-flags-here> -o "context.md"`
 
 5. Call Gemini CLI (allowed tool) with the prepared context:
 
