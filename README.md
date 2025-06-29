@@ -18,6 +18,8 @@ npx https://github.com/google-gemini/gemini-cli
 gemini login            # or: export GEMINI_API_KEY=…
 ```
 
+Note: Use Gemini CLI for free by logging in with a personal Google account to get a free Gemini Code Assist license. This gives you access to Gemini 2.5 Pro with a 1M token context window. The free tier includes 60 requests/minute and 1,000 requests/day. [Learn more about Gemini CLI](https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/?utm_source=chatgpt.com).
+
 Full [Install instructions](https://github.com/google-gemini/gemini-cli?tab=readme-ov-file#quickstart)
 
 ### Install Claude Code
