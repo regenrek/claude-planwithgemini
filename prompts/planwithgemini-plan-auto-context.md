@@ -9,7 +9,7 @@ Follow steps:
 
 The list below contains every tracked or untracked source file except those ignored by `.gitignore`, or Git’s default excludes. Claude should use this list to decide which folders/files matters.
 
-!`git ls-files --cached --others --exclude-standard``
+!`git ls-files --cached --others --exclude-standard`
 
 1. Analyse the file inventory: and the user’s request (`$ARGUMENTS`).  
 2. Choose the minimal yet sufficient context:
