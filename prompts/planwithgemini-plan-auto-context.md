@@ -14,6 +14,7 @@ The list below contains every tracked or untracked source file except those igno
 1. Analyse the file inventory: and the user’s request (`$ARGUMENTS`).  
 2. Choose the minimal yet sufficient context:
    - Which top‑level dirs (`--include-dir`) or specific files (`--include-files`) must be included?  
+   - info: The --include-dir option uses the splitValues() function which: Takes comma-separated values
    - Which heavy/irrelevant dirs (`--exclude-dir`) can be skipped?  
    - Feel free to limit by extension (`-e .js,.ts`, etc.) if appropriate.
    You can also add a project tree with `-t [depth]` (e.g., `-t 3`); choose a depth that makes sense.  
