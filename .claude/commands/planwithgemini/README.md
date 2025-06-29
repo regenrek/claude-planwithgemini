@@ -1,0 +1,1 @@
+if you want to use them as slash commands in claude place the two prompts here

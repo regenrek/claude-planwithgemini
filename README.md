@@ -1,21 +1,30 @@
 # /planwithgemini
 
-Generate a project‑wide implementation or refactor plan with Google Gemini CLI, using [Codefetch](https://github.com/regenrek/codefetch) for smart context selection, then continue execution in Claude Code.
+Generate a project‑wide implementation or refactor plan with Google Gemini CLI, using [Codefetch](https://github.com/regenrek/codefetch) for smart context selection, then continue execution in Claude Code.
 
+IMPORTANT NOTE: These prompts work with Gemini and can be used as Claude Code slash commands (in `.claude/commands/planwithgemini`) or as Cursor rules. However, I recommend referencing them with "@" for more reliable execution, as rules can sometimes behave unpredictably. (Thats the reason why )
+
+## Prompts
+
+(or when used as claude slash commands)
+
+- **`/planwithgemini-plan-auto-context`** - Analyzes your codebase and selects only relevant files/folders for your request
+- **`/planwithgemini-plan`** - Uses entire codebase context (simpler but less efficient)
+
+Both generate a plan file without writing code.
 
 ## Quick‑Start
 
 ⚠️ Add codefetch/ to your .gitignore file to avoid committing the fetched codebase.
 
-
 ### Install Gemini CLI 
 
 ```bash
-# 1 Install Gemini CLI & Codefetch (once)
-npx https://github.com/google-gemini/gemini-cli
+# 1 Install Gemini CLI & Codefetch (once)
+npm install -g @google/gemini-cli
 
-# 2 Authenticate Gemini (once)
-gemini login            # or: export GEMINI_API_KEY=…
+# 2 Authenticate Gemini (once)
+gemini            # or: export GEMINI_API_KEY=…
 ```
 
 Note: Use Gemini CLI for free by logging in with a personal Google account to get a free Gemini Code Assist license. This gives you access to Gemini 2.5 Pro with a 1M token context window. The free tier includes 60 requests/minute and 1,000 requests/day. [Learn more about Gemini CLI](https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/?utm_source=chatgpt.com).
